@@ -4,8 +4,16 @@
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(14rem, auto);
   gap: 2rem;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  bottom: 0;
+  left: 200px;
+  overflow-y: auto;
+  padding: 1.2rem;
   @include xl {
     grid-template-columns: repeat(3, 1fr);
+    left: 100px;
   }
   @include lg {
     grid-template-columns: repeat(2, 1fr);

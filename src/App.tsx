@@ -10,18 +10,20 @@ import Footer from './components/footer/Footer';
 function App() {
   const Layout = () => {
     return (
-      <main className="main">
+      <>
         <Header />
 
-        <div className="container ">
-          <Menu />
+        <main className="main">
+          <div className="container ">
+            <Menu />
 
-          <section className="section-content">
-            <Outlet />
-          </section>
-        </div>
+            <section className="section-content">
+              <Outlet />
+            </section>
+          </div>
+        </main>
         <Footer />
-      </main>
+      </>
     );
   };
 
