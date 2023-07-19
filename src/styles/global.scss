@@ -1,10 +1,96 @@
+/*
+--- 01 排版系统
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 颜色
+
+- Primary: #e67e22
+- Tints:
+#fdf2e9
+#fae5d3
+#eb984e
+
+- Shades: 
+#cf711f
+#45260a
+
+- Accents:
+- Greys
+
+#888
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #fdf2e9)
+#555
+#333
+
+--- 05 阴影
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 圆角
+Default: 9px
+Medium: 11px
+
+--- 07 留白
+
+- 间距系统 (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+@import './var.scss';
+@import './responsive.scss';
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: $bg-primary;
+  color: $color-primary;
+  line-height: 1;
+}
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+// 布局
+
+.container {
+  display: flex;
+}
+
+// .grid-main {
+//   display: grid;
+//   grid-template-columns: 20rem 1fr;
+// }
+
+.section-content {
+  // width: 0 auto;
+  padding: 0.8rem 2.4rem;
+  width: 100%;
 }
